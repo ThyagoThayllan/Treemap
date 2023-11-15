@@ -1,0 +1,38 @@
+:root {
+  --GRAY1: #f2f2f2;
+  --GRAY2: #d9d9d9;
+  --GRAY3: #808080;
+  --GRAY4: #333333;
+  --GRAY5: #262626;
+  --GRAY6: #1a1a1a;
+  --GRAY7: #0d0d0d;
+
+  --GREEN1: #008000;
+  --GREEN2: #0f6a08;
+
+  --RED1: #8b0000;
+  --RED2: #740a01;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--GRAY7);
+  color: var(--GRAY1);
+}
+
+button, body, input {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
