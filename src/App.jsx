@@ -96,12 +96,14 @@ export const App = () => {
     },
   ];
 
+  const sortedProducts = products.sort((a, b) => b.amount - a.amount);
+
   const totalProductsSold = products
     .reduce((acc, product) => acc + product.price * product.amount, 0)
     .toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
-  const date = new Date()
-  const formattedDate = new Intl.DateTimeFormat('pt-BR').format();
+  const date = new Date();
+  const formattedDate = new Intl.DateTimeFormat('pt-BR').format(date);
 
   return (
     <div
@@ -124,7 +126,7 @@ export const App = () => {
       <p style={{ margin: "10px" }}><b>Total de vendas hoje:</b></p>
       <h2 style={{padding: '1rem 2rem', marginBottom: '2rem', backgroundColor: '#0f6a08', borderRadius: '10px'}}>{totalProductsSold}</h2>
       <div>
-        {products.map((product) => (
+        {sortedProducts.map((product) => (
           <div key={product.name} className={styles.productCard}>
             <p className={styles.product}><b>Produto:</b> {product.name}</p>
             <p className={styles.product}><b>Preço:</b> {(product.price).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</p>
