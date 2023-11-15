@@ -1,0 +1,214 @@
+.profile {
+    position: fixed;
+    top: 0;
+    right: -340px;
+    width: 400px;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--GRAY7);
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    z-index: 3;
+    letter-spacing: 2px;
+    font-size: 0.875rem;
+    border-left: 2px solid var(--GREEN2);
+    transition: all 0.5s;
+  }
+  .profile:hover {
+    right: 0;
+  }
+  
+  .profile p {
+    margin-bottom: 15px;
+  }
+  .profile p a {
+    color: #0e76a8;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .profile img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 2px solid var(--GREEN2);
+    transition: all 0.2s;
+  }
+  .profile img:hover {
+    transform: scale(110%);
+    box-shadow: 0 0 5px var(--GREEN1);
+  }
+  
+  .iconeMenu {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    user-select: none;
+  }
+  
+  .info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .name {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--GRAY6);
+  }
+  .job {
+    margin-top: -10px;
+  }
+  
+  .technologies {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    gap: 0.5rem;
+  }
+  .technologies h2 {
+    font-size: 1.25rem;
+  }
+  .technologies div {
+    display: flex;
+    gap: 2rem;
+  }
+  .technologies ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    line-height: 1.5;
+  }
+  
+  .buttons {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .linkedin {
+    background-color: #0e76a8;
+    color: var(--GRAY1);
+    text-decoration: none;
+    letter-spacing: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid var(--GRAY6);
+    transition: all 0.2s;
+  }
+  .linkedin:hover {
+    transform: scale(110%);
+    box-shadow: 0 0 10px #0e76a8;
+  }
+  
+  .github {
+    background-color: #993399;
+    color: var(--GRAY1);
+    text-decoration: none;
+    letter-spacing: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--GRAY6);
+    transition: all 0.2s;
+  }
+  .github:hover {
+    transform: scale(110%);
+    box-shadow: 0 0 10px #993399;
+  }
+  
+  @media (max-width: 800px) {
+    * {
+      font-size: 0.875rem;
+    }
+  
+    .box {
+      width: 75%;
+    }
+  
+    .form {
+      width: 75%;
+    }
+  
+    .profile {
+      width: 75%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .profile {
+      top: 0;
+      right: -515px;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .profile {
+      right: -280px;
+    }
+    .iconeMenu {
+      left: 10px;
+    }
+  }
+  
+  @media (max-width: 414px) {
+    .profile {
+      right: -270px;
+    }
+  }
+  
+  @media (max-width: 390px) {
+    .profile {
+      right: -255px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .profile {
+      right: -245px;
+    }
+    .iconeMenu {
+      left: 8px;
+    }
+  }
+
+  .productCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--GREEN2);
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+
+  .product {
+    padding-right: 1rem;
+    border-right: 1px solid var(--GRAY6);
+  }
+  .product:last-child {
+    padding-right: 1rem;
+    border: 0;
+  }
