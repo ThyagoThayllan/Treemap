@@ -137,7 +137,7 @@ export const App = () => {
 
       <div className={styles.profile}>
         <div className={styles.iconeMenu}>☰</div>
-        <p>Feito for <a href='https://www.linkedin.com/in/thyago-thayllan-mendes-de-sousa-2058b0239/' target='_blank'>Thyago Thayllan</a></p>
+        <p>Feito for <a href='https://www.linkedin.com/in/thyagothayllan' target='_blank'>Thyago Thayllan</a></p>
         <img src={minhaFoto} alt="Foto de Thyago Thayllan" />
         <div className={styles.info}>
           <p className={styles.name}>Thyago Thayllan</p>
@@ -159,7 +159,7 @@ export const App = () => {
           </div>
         </div>
         <div className={styles.buttons}>
-          <a target='_blank' className={styles.linkedin} href="https://www.linkedin.com/in/thyago-thayllan-mendes-de-sousa-2058b0239/">LinkedIn</a>
+          <a target='_blank' className={styles.linkedin} href="https://www.linkedin.com/in/thyagothayllan">LinkedIn</a>
           <a target='_blank' className={styles.github} href="https://github.com/ThyagoThayllan">GitHub</a>
         </div>
       </div>
